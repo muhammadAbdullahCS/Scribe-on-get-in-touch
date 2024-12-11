@@ -1,0 +1,21 @@
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+  }
+  
+  .ball {
+    background-color: #5857F6;
+    border-radius: 50%;
+    position: absolute;
+    top: -8%; /* Adjusted to ensure ball is visible */
+  }
