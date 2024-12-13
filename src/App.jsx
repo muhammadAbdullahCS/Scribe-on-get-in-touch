@@ -1,9 +1,15 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Home from "./components/Home";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
-import Contact from './components/Contact.jsx';
+import Contact from "./components/Contact.jsx";
+import Security from "./components/Security.jsx";
 
 function App() {
   return (
@@ -11,13 +17,14 @@ function App() {
       <Routes>
         {/* Default route - redirects to home */}
         <Route path="/" element={<Navigate to="/home" replace />} />
-        
+
         {/* Main routes */}
         <Route path="/home" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/contact" element={<Contact />} />
-        
+        <Route path="/security" element={<Security />} />
+
         {/* Optional: 404 Not Found route */}
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>

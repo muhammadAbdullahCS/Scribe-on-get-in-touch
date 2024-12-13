@@ -103,15 +103,13 @@ function Contact() {
       <div className="w-full flex justify-center ">
         <div className="container w-[60%] flex flex-col  border-2 border-solid border-black ">
           <div className="prefer_part text-black flex flex-col  py-10 gap-3 ">
-            <div className="gap-5">
-              <h1
-                className="text-2xl md:text-3xl lg:text-4xl hd:text-6xl 4k2:text-9xl font-playfair text-transparent font-bold 
-                                         bg-clip-text bg-gradient-to-l from-[#5857F6] to-[#101052]"
-              >
-                We Scribe On so you can carry on
-              </h1>
-              <p>Get in touch with us now.</p>
-            </div>
+            <h1
+              className="text-2xl md:text-3xl lg:text-4xl hd:text-6xl 4k2:text-9xl font-playfair text-transparent font-bold 
+                                              bg-clip-text bg-gradient-to-l from-[#5857F6] to-[#101052]"
+            >
+              We Scribe On so you can carry on
+            </h1>
+            <p>Get in touch with us now.</p>
 
             <button className="font-raleway w-[40%] 4k2:text-5xl hd:text-2xl text-white rounded-lg bg-black py-2 px-2 4k2:py-6">
               Start Live Chat Now
