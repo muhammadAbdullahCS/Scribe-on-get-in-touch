@@ -1,20 +1,9 @@
-Key Security Features:
-
-Data Encryption
-In Transit: All data transmitted between your device and our servers is encrypted using Secure Socket Layer (SSL)/Transport Layer Security (TLS) protocols. This ensures that your data cannot be intercepted or read by unauthorised parties during transmission.
-At Rest: Your data is encrypted when stored on our servers using Advanced Encryption Standard (AES) 256-bit encryption, one of the strongest encryption standards available.
-
-
-Network Security
-Firewalls and Access Controls: We employ advanced firewalls and intrusion detection/prevention systems to protect our network from unauthorised access and cyber threats.
-Secure Access Management: Strict access controls are in place to ensure that only authorised personnel can access sensitive data, following the principle of least privilege.
-
-Compliance and Certifications
-AWS Compliance: AWS infrastructure meets numerous compliance standards, including ISO 27001, SOC 1/2/3, PCI DSS Level 1, and more. This ensures that our underlying infrastructure adheres to the highest security protocols. Regulatory Compliance: We are committed to complying with all relevant data protection regulations applicable to our services.
-
-
-
-
-Data Backup and Recovery
-Regular Backups: Your data is regularly backed up to prevent loss due to unexpected events.
-Disaster Recovery: Our disaster recovery plans ensure business continuity and quick restoration of services in the event of an outage.
+FAQs Section:
+Q: How is my data protected during transmission?
+A: All data transmitted between your device and our servers is encrypted using SSL/TLS protocols.
+Q: Where is my data stored?
+A: 
+Q: 
+A: 
+Q: 
+A: We conduct regular security audits and continuously monitor our systems to ensure the highest level of security.

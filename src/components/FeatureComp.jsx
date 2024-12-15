@@ -104,11 +104,11 @@ function FeatureComp({
 
             <div className="flex flex-col h-full justify-start w-[90%] pt-6 4k2:pb-9 4k2:pt-14">
               <div className="z-20">
-                <p className="text-left font-raleway text-base 4k2:text-4xl pb-4 text-white">
+                <p className="text-left font-raleway text-base 4k2:text-5xl pb-6 text-white">
                   <b>{headingst}</b>
                   {paragraphst}
                 </p>
-                <p className="text-left font-raleway text-base 4k2:text-4xl text-white">
+                <p className="text-left font-raleway text-base 4k2:text-5xl text-white">
                   <b>{headingnd}</b>
                   {paragraphnd}
                 </p>

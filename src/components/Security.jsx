@@ -2,25 +2,32 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import security from "../assets/security.png";
+import smile from "../assets/smile.png";
 
 import FeatureComp from "./FeatureComp";
 
 function Security() {
+  const [faq, setFaq] = useState(false);
+  const faqHandle = () => {
+    setFaq(!faq);
+    console.log(faq);
+  };
   return (
     <>
       <Navbar mode="dark" />
       <div className="Top_State_container  flex flex-col items-center w-full h-auto py-10 gap-7">
-        <div className="lock_heading flex flex-wrap md:flex-nowrap justify-center gap-4 w-[60%] max-sm:w-[90%] ">
+        <div className="lock_heading flex  justify-between  gap-4 h-[17vh]  w-[60%] max-sm:w-[80%] ">
           <img
             src={security}
-            className="object-cover w-[20%] max-sm:w-[60%] md:w-[30%] h-auto max-sm:h-[60%]"
+            className="  h-full max-sm:w-[30%] object-scale-down "
             alt=""
           />
-          <div className="Topheading flex flex-col justify-end w-[80%] max-sm:w-[90%] md:w-[70%] gap-5">
-            <h1 className="text-3xl max-sm:text-lg xl:text-5xl 4k2:text-9xl font-playfair text-indigo-700 ">
+
+          <div className="Topheading flex flex-col justify-evenly  max-sm:h-auto w-[80%] max-sm:w-[70%] md:w-auto gap-1">
+            <h1 className="text-3xl max-sm:text-sm md:text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl 4k2:text-8xl font-playfair text-indigo-700 ">
               <b>Your Data Security Is Our Top Priority</b>
             </h1>
-            <p className="font-raleway text-black max-sm:text-xs xl:text-2xl 4k2:text-7xl">
+            <p className="font-raleway text-black max-sm:text-[9px] md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl 4k2:text-5xl">
               We are committed to safeguarding your information with industry
               content-leading security measures and protocols.
             </p>
@@ -49,10 +56,10 @@ function Security() {
 
       <div className="keyBenefits text-black flex flex-col items-center max-sm:items-start w-auto h-auto pt-6 pb-10">
         <div className="container w-[60%] max-sm:w-[80%] max-sm:mx-auto flex flex-col items-start gap-2 xl:gap-4">
-          <h1 className="text-3xl xl:text-4xl 4k2:text-8xl font-playfair text-indigo-700 ">
+          <h1 className="text-3xl xl:text-4xl 4k2:text-8xl font-playfair bg-gradient-to-r from-indigo-900 to-purple-500 text-transparent bg-clip-text ">
             <b>Keys Security Features:</b>
           </h1>
-          <h1 className="text-1xl xl:text-2xl 4k2:text-7xl font-playfair text-indigo-700">
+          <h1 className="text-1xl xl:text-2xl 4k2:text-7xl font-playfair bg-gradient-to-r from-indigo-900 to-purple-500 text-transparent bg-clip-text">
             <b>Keys Security Features:</b>
           </h1>
 
@@ -111,7 +118,156 @@ function Security() {
         </div>
       </div>
 
-      {/* -------------- */}
+      {/* -------------- Protecting Your Privacy ------------ */}
+
+      <div className="parentContainer flex flex-col items-center gap-8 h-auto pb-10">
+        <div className="protecting text-black flex flex-col items-start w-[60%] max-sm:w-[80%] gap-3 4k2:gap-9">
+          <h1 className="bg-gradient-to-r from-indigo-900 to-purple-800 text-transparent bg-clip-text font-playfair text-3xl max-sm:text-xl xl:text-4xl 4k2:text-8xl ">
+            <b>Protecting Your Privacy</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            We are committed to maintaining the confidentiality of your
+            information. Our
+            <b>
+              <i>
+                <u> Privacy Policy </u>
+              </i>
+            </b>
+            outlines how we collect, use, and protect your data.
+          </p>
+          <h1 className="bg-gradient-to-r from-indigo-900 to-purple-800 text-transparent bg-clip-text font-playfair text-xl max-sm:text-base 4k2:text-6xl">
+            <b>No Unauthorised Sharing</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            We do not share your personal or patient data with third parties
+            without your explicit consent.
+          </p>
+          <h1 className="bg-gradient-to-r from-indigo-900 to-purple-800 text-transparent bg-clip-text font-playfair text-xl max-sm:text-base 4k2:text-6xl">
+            <b>Data Minimisation</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            We collect only the data necessary to provide our services
+            effectively.
+          </p>
+          <h1 className="bg-gradient-to-r from-indigo-900 to-purple-800 text-transparent bg-clip-text font-playfair text-xl max-sm:text-base 4k2:text-6xl">
+            <b>Anonymisation and Pseudonymisation</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            Where appropriate, we anonymise or pseudonymised data to enhance
+            privacy protection.
+          </p>
+        </div>
+        {/* ----------------- User Responsibilities ----------- */}
+        <div className="UserResponsibilities text-black flex flex-col items-start w-[60%] max-sm:w-[80%] gap-3 4k2:gap-9">
+          <div className="flex items-center w-full">
+            <img
+              src={smile}
+              alt=""
+              className=" h-10 max-sm:w-[20%] object-scale-down"
+            />
+            <h1 className="bg-gradient-to-r from-indigo-900 to-purple-800 text-transparent bg-clip-text font-playfair text-3xl max-sm:text-lg xl:text-4xl 4k2:text-8xl  max-sm:w-[80%] ">
+              <b>User Responsibilities</b>
+            </h1>
+          </div>
+          <p className="xl:text-xl 4k2:text-6xl">
+            While we take extensive measures to protect your data, security is a
+            shared responsibility. We encourage you to:
+          </p>
+          <h1 className="bg-gradient-to-r from-indigo-900 to-purple-800 text-transparent bg-clip-text font-playfair text-xl max-sm:text-base 4k2:text-6xl">
+            <b>Use Strong Passwords</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            Create complex passwords and keep them confidential.
+          </p>
+          <h1 className="bg-gradient-to-r from-indigo-900 to-purple-800 text-transparent bg-clip-text font-playfair text-xl max-sm:text-base 4k2:text-6xl">
+            <b>Stay Vigilant</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            Be cautious of phishing attempts and unauthorised access to your
+            account.
+          </p>
+        </div>
+        {/* ----------------- Continuous Improvement ----------- */}
+        <div className="Continuousheading flex flex-col text-black w-[60%] max-sm:w-[80%] gap-3 4k2:gap-9 ">
+          <h1 className="bg-gradient-to-r from-indigo-900 to-purple-800 text-transparent bg-clip-text font-playfair text-3xl max-sm:text-xl xl:text-4xl 4k2:text-8xl ">
+            <b>Continuous Improvement</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            We are dedicated to continuously enhancing our security measures. As
+            new threats emerge, we adapt and strengthen our protocols to ensure
+            your data remains secure.
+          </p>
+          <h1 className="bg-gradient-to-r from-indigo-900 to-purple-800 text-transparent bg-clip-text font-playfair text-xl max-sm:text-base 4k2:text-6xl">
+            <b>Contact Us</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            If you have any questions or concerns about our security measures,
+            please do not hesitate to get in touch with us.
+          </p>
+        </div>
+      </div>
+      {/* ----------------- Frequently Asked Questions ----------- */}
+      <div className="container text-black flex flex-col justify-center items-center  gap-3 4k2:gap-9">
+        <div className="displayFAQ flex flex-col items-start w-[60%] max-sm:w-[80%] xl:w-[55%] hd:w-[60%] 4k:w-[55%]  gap-3 4k2:gap-9">
+          <h1 className="font-playfair text-3xl max-sm:text-base 4k2:text-7xl">
+            <b>Frequently Asked Questions</b>
+          </h1>
+          <h1 className="font-playfair text-2xl max-sm:text-base 4k2:text-7xl">
+            <b>How is my data protected during transmission?</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            All data transmitted between your device and our servers is
+            encrypted using SSL/TLS protocols.
+          </p>
+          <h1 className="font-playfair text-2xl max-sm:text-base 4k2:text-7xl">
+            <b>Where is my data stored?</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            Your data is securely stored on AWS servers, benefiting from
+            advanced encryption and compliance with industry-leading
+            certifications such as ISO 27001, SOC 2, and HIPAA. This ensures a
+            robust and reliable environment for sensitive information.
+          </p>
+          <h1 className="font-playfair text-2xl max-sm:text-base 4k2:text-7xl">
+            <b>Do you share my data with third parties?</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            No, we do not share your personal or patient data with third parties
+            without your explicit consent.
+          </p>
+
+          <p
+            className={faq ? "hidden" : "cursor-pointer 4k2:text-4xl"}
+            onClick={faqHandle}
+          >
+            <b>
+              <u>Show more</u>
+            </b>
+          </p>
+        </div>
+        {/* ------------------------------hidden FAQ --------------- */}
+        <div
+          className={
+            faq
+              ? "hiddenFAQ flex flex-col gap-3 items-start w-[60%] max-sm:w-[80%] xl:w-[55%] hd:w-[60%] 4k2:gap-9"
+              : "hidden"
+          }
+        >
+          <h1 className="font-playfair text-2xl max-sm:text-base 4k2:text-7xl">
+            <b>How often is your security reviewed?</b>
+          </h1>
+          <p className="xl:text-xl 4k2:text-6xl">
+            We conduct regular security audits and continuously monitor our
+            systems to ensure the highest level of security.
+          </p>
+
+          <p className="cursor-pointer 4k2:text-4xl " onClick={faqHandle}>
+            <b>
+              <u>Show less</u>
+            </b>
+          </p>
+        </div>
+      </div>
 
       <Footer />
     </>
