@@ -208,7 +208,7 @@ function Security() {
       </div>
       {/* ----------------- Frequently Asked Questions ----------- */}
       <div className="container text-black flex flex-col justify-center items-center  gap-3 4k2:gap-9">
-        <div className="displayFAQ flex flex-col items-start w-[60%] max-sm:w-[80%] xl:w-[55%] hd:w-[60%] 4k:w-[55%]  gap-3 4k2:gap-9">
+        <div className="displayFAQ flex flex-col items-start w-[60%] max-sm:w-[80%] xl:w-[55%] hd:w-[60%] 2k:w-[55%]  gap-3 4k2:gap-9">
           <h1 className="font-playfair text-3xl max-sm:text-base 4k2:text-7xl">
             <b>Frequently Asked Questions</b>
           </h1>

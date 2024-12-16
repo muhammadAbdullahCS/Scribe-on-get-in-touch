@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        "4k": "2048px",
+        "2k": "2048px",
+        "4k": "2560px",
         hd: "1920px",
         "4k2": "3840px",
         "max-lg": { max: "1024px" }, // Custom max-width breakpoint
